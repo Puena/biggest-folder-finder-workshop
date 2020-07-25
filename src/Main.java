@@ -51,6 +51,7 @@ public class Main {
                     .reduce(0L, Long::sum);
         } catch (IOException e) {
             e.printStackTrace();
+            return -1;
         }
 
         // Size folder in bytes
