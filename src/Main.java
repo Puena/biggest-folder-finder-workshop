@@ -26,10 +26,11 @@ public class Main {
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("Не верный путь файла!");
+            return -1;
         }
 
         // Path should be dir
-        if (folderPath == null || ! Files.isDirectory(folderPath)) {
+        if (! Files.isDirectory(folderPath)) {
             System.out.println("По указанному пути нет папки.");
             return -1;
         }
